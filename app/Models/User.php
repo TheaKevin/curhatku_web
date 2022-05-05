@@ -6,9 +6,10 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Auth\Passwords\CanResetPassword;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -21,6 +22,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'status',
+        'userImage',
+        'gender',
+        'age',
+        'dob',
+        'anonymous'
     ];
 
     /**
@@ -41,4 +48,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function curhats()
+    {
+        return $this->hasMany(curhat::class);
+    }
+
+    public function ratings()
+    {
+        return $this->hasMany(rating::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(comment::class);
+    }
 }
