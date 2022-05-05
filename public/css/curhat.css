@@ -1,0 +1,94 @@
+.curhatCardPria, .curhatCardWanita{
+    width: 350px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.curhatCardPria{
+    border: 1px solid #63C5DA;
+    box-shadow: 0px 4px 4px 3px rgba(99, 197, 218, 0.25);
+}
+
+.curhatCardWanita{
+    border: 1px solid #FF69B4;
+    box-shadow: 0px 4px 4px 3px rgba(255, 105, 180, 0.25);
+}
+
+.curhatHeader{
+    height: 30px;
+}
+
+.curhatProfile{
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.curhatIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.curhatDate{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.curhatBody{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    word-wrap: break-word;
+}
+
+.isiCurhatWanita, .isiCurhatPria, .readMoreWanita, .readMorePria{
+    text-decoration: none;
+}
+
+.Wanita, .readMoreWanita, .isiCurhatWanita:hover{
+    color: #FF69B4;
+}
+
+.Pria, .readMorePria, .isiCurhatPria:hover{
+    color: #63C5DA;
+}
+
+.readMoreWanita:hover{
+    color: #ff8cc6;
+}
+
+.readMorePria:hover{
+    color: #92dff0;
+}
+
+.h-350px{
+    height: 350px;
+}
+
+.penulisWanita, .penulisPria{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.penulisWanita{
+    border: 1px solid #FF69B4;
+}
+
+.penulisPria{
+    border: 1px solid #63C5DA;
+}
+
